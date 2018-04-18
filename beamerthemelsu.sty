@@ -1,0 +1,45 @@
+\mode<presentation>
+
+% Display a navigation bar
+\def\beamer@themelsu@navigation{false}
+\DeclareOptionBeamer{navigation}[true]{%
+  \def\beamer@themelsu@navigation{#1}}
+
+% Do not display "boxes" to go to subsections in the navigation bar.
+\def\beamer@themelsu@nosubsection{false}
+\DeclareOptionBeamer{no-subsection}[true]{%
+  \def\beamer@themelsu@nosubsection{#1}}
+
+% Do not display the total number of pages.
+\def\beamer@themelsu@nototalframenumber{false}
+\DeclareOptionBeamer{no-totalframenumber}[true]{%
+  \def\beamer@themelsu@nototalframenumber{#1}}
+
+\ProcessOptionsBeamer
+
+% Requirement
+\RequirePackage{tikz}
+
+% Settings
+\useinnertheme{lsu}
+\useoutertheme[navigation=\beamer@themelsu@navigation,
+               no-subsection=\beamer@themelsu@nosubsection,
+               no-totalframenumber=\beamer@themelsu@nototalframenumber]{lsu}
+\usecolortheme{lsu}
+
+
+\setbeamertemplate{blocks}[rounded][shadow=true]  
+\setbeamertemplate{itemize item}{\scriptsize$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\scriptsize$\blacktriangleright$}
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamercolor{block title}{bg=black!30!red,fg=gray!10}
+\setbeamercolor{block body}{fg=black!30!gray,bg=gray!10}
+\setbeamerfont{block title}{series=\bfseries}
+
+\setbeamerfont{description item}{series=\bfseries}
+
+
+
+
+\mode<all>

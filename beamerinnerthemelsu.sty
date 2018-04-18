@@ -1,0 +1,61 @@
+\mode<presentation>
+
+\setbeamertemplate{background}{
+  
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);  
+  \ifnum\thepage>1
+  
+  %% Main body background
+  %	\node[inner sep=0pt,anchor=north west] (eye_candy_3) at (0,1.05*\the\paperheight)	{\includegraphics[width=.075\textwidth]{media/eye_candy_3}};
+
+  \else
+  
+  %% Title page background
+  
+  	\node[inner sep=0pt,anchor=north west] (eye_candy_2) at (0,1.043*\the\paperheight)	{\includegraphics[width=.3\textwidth]{media/eye_candy_2}};
+  	
+    \node[inner sep=0pt,anchor=north east] (kios_logo_2) at (0.98*\the\paperwidth,0.98*\the\paperheight)  {\includegraphics[height=.2\textheight]{media/lsu_college_of_engineering}};
+	
+	  \draw[line width=5mm,white!50!gray] (kios_logo_2.south west) ++ (-2.7cm,0.15cm) -- ++ (-3.6cm,0);
+	
+	  \draw[line width=0.75mm,lsupurple] (kios_logo_2.south west) ++ (-0.3cm,0.15cm) -- ++ (-5.7cm,0);
+  
+  \fi 
+  \end{tikzpicture} 
+}
+
+% Title page
+\defbeamertemplate*{title page}{lsu}[1][]
+{ 
+    \vskip1.5cm%
+    \begin{beamercolorbox}[wd=12cm,ht=25ex,leftskip=.3\textwidth,#1]{title page header}
+      \usebeamerfont{title}\textbf{\inserttitle}\par%
+    \end{beamercolorbox}%
+    
+    \vskip0.75cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=.3\textwidth,#1]{author}
+      \usebeamerfont{author}\textbf{\insertauthor}%
+    \end{beamercolorbox}
+
+    \vskip0.75cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=.3\textwidth,#1]{institute}
+      \usebeamerfont{institute}\textbf{\insertinstitute}%
+    \end{beamercolorbox}
+
+%	\begin{tikzpicture}
+%	\useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+%	\node[white,anchor=south east] at (0.5*\the\paperwidth,-0.05) {\scriptsize \textbf{\insertframenumber\ of \inserttotalframenumber}};
+%	\end{tikzpicture}
+
+    \vskip0.2cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=.3\textwidth,#1]{date}
+      \usebeamerfont{author}\insertdate%
+    \end{beamercolorbox}
+  \vfill
+}
+
+
+
+
+\mode<all>

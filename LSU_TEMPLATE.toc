@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Review of key concepts}{1}{0}{1}
+\beamer@subsectionintoc {1}{1}{Elements in Supervised Learning}{1}{0}{1}
+\beamer@subsectionintoc {1}{2}{Elements continued: Objective Function}{4}{0}{1}
+\beamer@sectionintoc {2}{What are we Learning}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Tree Ensemble methods}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Objective vs Heuristic}{6}{0}{2}
+\beamer@sectionintoc {3}{How do we Learn?}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{So How do we Learn?}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{Additive Training}{8}{0}{3}
+\beamer@sectionintoc {4}{Take Home Message for Our Work}{10}{0}{4}
+\beamer@subsectionintoc {4}{1}{Questions to check if you really get it}{10}{0}{4}
